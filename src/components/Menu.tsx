@@ -73,8 +73,6 @@ const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 const Menu: React.FC = () => {
   const location = useLocation();
 
-  console.log(appPages)
-
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent>
