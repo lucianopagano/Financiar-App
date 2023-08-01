@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp,documentTextOutline, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -21,6 +21,8 @@ interface AppPage {
   title: string;
 }
 
+
+
 const appPages: AppPage[] = [
   {
     title: 'Inbox',
@@ -29,10 +31,10 @@ const appPages: AppPage[] = [
     mdIcon: mailSharp
   },
   {
-    title: 'Alta Impuesto',
+    title: 'Alta Servicio',
     url: '/folder/Alta-Impuesto',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    iosIcon: documentTextOutline,
+    mdIcon: documentTextOutline
   },
   {
     title: 'Outbox',
