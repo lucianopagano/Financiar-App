@@ -32,14 +32,19 @@ const App: React.FC = () => {
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
-            <Route path="/" exact={true}>
+            <Route path="/" exact={true}
+              //para el caso que se quiera validar la sesion
+              //render={(props) => {
+              //  return isAuthed ? <DashboardPage {...props} /> : <LoginPage />;
+              //}}
+            >
               <Redirect to="/folder/Inbox" />
             </Route>
             <Route path="/" exact={true}>
               <Redirect to="/folder/" />
             </Route>
             <Route path="/folder/:name" exact={true}>
-              <Page />
+              <Page  />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
@@ -47,5 +52,7 @@ const App: React.FC = () => {
     </IonApp>
   );
 };
+
+//
 
 export default App;
